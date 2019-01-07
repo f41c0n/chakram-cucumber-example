@@ -1,7 +1,7 @@
 {
-  "name": "typescript-chakram-cucumber",
+  "name": "chakram-cucumber-example",
   "version": "1.0.0",
-  "description": "API testing using Chakram framework with Cucumber BDD test runner written in TypeScript.",
+  "description": "Example of using Chakram API testing framework with Cucumber BDD test runner written in TypeScript.",
   "main": "index",
   "scripts": {
     "pretest": "rimraf ./build/* ./report/* && tsc",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/f41c0n/typescript-chakram-cucumber.git"
+    "url": "git+https://github.com/f41c0n/chakram-cucumber-example.git"
   },
   "keywords": [
     "chakram",
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/f41c0n/"
   },
-  "homepage": "https://github.com/f41c0n/typescript-chakram-cucumber.git#readme",
+  "homepage": "https://github.com/f41c0n/chakram-cucumber-example.git#readme",
   "devDependencies": {
     "@types/cucumber": "^4.0.1",
     "@types/node": "^10.12.18",

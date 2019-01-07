@@ -1,0 +1,36 @@
+{
+  "name": "typescript-chakram-cucumber",
+  "version": "1.0.0",
+  "description": "API testing using Chakram framework with Cucumber BDD test runner written in TypeScript.",
+  "main": "index",
+  "scripts": {
+    "pretest": "rimraf ./build/* ./report/* && tsc",
+    "test": "cross-env ENV=https://httpbin.org/ cucumber-js features/ --require ./build --format json:report/report.json",
+    "posttest": "tsc report.ts --outDir ./build --target es2015 && node build/report.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f41c0n/typescript-chakram-cucumber.git"
+  },
+  "keywords": [
+    "chakram",
+    "cucubmer",
+    "typescript"
+  ],
+  "author": "Marcin Zietara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/f41c0n/"
+  },
+  "homepage": "https://github.com/f41c0n/typescript-chakram-cucumber.git#readme",
+  "devDependencies": {
+    "@types/cucumber": "^4.0.1",
+    "@types/node": "^10.12.18",
+    "chakram-cucumber": "^1.0.1",
+    "cross-env": "^5.2.0",
+    "cucumber": "^4.2.1",
+    "multiple-cucumber-html-reporter": "^1.11.6",
+    "rimraf": "^2.6.3",
+    "typescript": "^2.8.1"
+  }
+}
